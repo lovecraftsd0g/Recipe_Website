@@ -16,12 +16,30 @@
                         ishidden = false;
                     }
                 });
+
+                let serchhid = true;
+                $(".search").hover(function(){
+                    if(serchhid){
+                        $(".searches").css('display','block')
+                        serchhid = false;
+                    }else{
+                        $(".searches").css('display','none')
+                        serchhid = true;
+                    }
+                });
             });
         </script>
     </head>
     <body>
         <div>
-            <h2>search bar</h2>
+            <h2 class="search">search bar</h2>
+            <ul class="searches">
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+                <li>d</li>
+                <li>e</li>
+            </ul>
         </div>
         <div class="written_content w3-half">
             <h3>hall of recipes</h3>
@@ -33,7 +51,7 @@
                 --------------------------
                 ----------------------
             </p>
-            <button id="gun" class="w3-button w3-round w3-red ">look now</button>
+            <button id="gun" class="w3-button w3-round w3-red ">featured</button>
             
         </div>
         <div>

@@ -8,6 +8,10 @@ header{
     text-align: center;
 }
 
+.searches{
+    display: none;
+}
+
 /* CSS Variables */
 :root{
     --bg-color: rgb(255, 255, 255);
