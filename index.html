@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="h.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                let ishidden = false;
+                $("#gun").click(function(){
+                    if(!ishidden){
+                        $("#you").hide();
+                        ishidden = true;
+                    }else{
+                        $("#you").show();
+                        ishidden = false;
+                    }
+                });
+
+                let serchhid = true;
+                $(".search").hover(function(){
+                    if(serchhid){
+                        $(".searches").css('display','block')
+                        serchhid = false;
+                    }else{
+                        $(".searches").css('display','none')
+                        serchhid = true;
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            <h2 class="search">search bar</h2>
+            <ul class="searches">
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+                <li>d</li>
+                <li>e</li>
+            </ul>
+        </div>
+        <div class="written_content w3-half">
+            <h3>hall of recipes</h3>
+            <h1>by: patrick agastya rama kusmajadi</h1>
+            <p id="you">
+                --------------------------------
+                ---------------------------------
+                -------------------------------
+                --------------------------
+                ----------------------
+            </p>
+            <button id="gun" class="w3-button w3-round w3-red ">featured</button>
+            
+        </div>
+        <div>
+        </div>
+        
+        <div class="the images w3-half">
+
+        </div>
+
+    </body>
+</html>
