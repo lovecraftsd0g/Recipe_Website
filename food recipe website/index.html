@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="h.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                let ishidden = false;
+                $("#gun").click(function(){
+                    if(!ishidden){
+                        $("#you").hide();
+                        ishidden = true;
+                    }else{
+                        $("#you").show();
+                        ishidden = false;
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            <h2>search bar</h2>
+        </div>
+        <div class="written_content w3-half">
+            <h3>hall of recipes</h3>
+            <h1>by: patrick agastya rama kusmajadi</h1>
+            <p id="you">
+                --------------------------------
+                ---------------------------------
+                -------------------------------
+                --------------------------
+                ----------------------
+            </p>
+            <button id="gun" class="w3-button w3-round w3-red ">look now</button>
+            
+        </div>
+        <div>
+        </div>
+        
+        <div class="the images w3-half">
+
+        </div>
+
+    </body>
+</html>
