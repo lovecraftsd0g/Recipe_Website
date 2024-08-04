@@ -22,9 +22,33 @@
             #recipe-card{
                 margin-top: 10px;
             }
+            
+        .cont{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
         </style>
     </head>
     <body>
+        <div class="cont">
+            <div class="search">
+                <a  href="index.html" class="w3-button">
+                    <img src="home-button.png" width="40" height="40">
+                </a>
+            </div>
+            <div class="log-and-sig-and-home">
+                <a href="login_&_sign_up.html" class="w3-button">
+                    <p class="buttonp">login</p>
+                </a>
+                    
+                <a href="login_&_sign_up.html" class="w3-button w3-red">
+                    <p class="buttonp">sign in</p>
+                </a>
+            </div>
+        </div>
+
+
         <div class="sw">
             <input class="w3-circle w3-red" type="text" id="searchbar" placeholder="search" onkeyup="searchfood()">
         </div>
