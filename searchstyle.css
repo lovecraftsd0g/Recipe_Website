@@ -10,3 +10,8 @@
     margin-top: 1rem;
 }
 
+#full-card {
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* Ensure the card takes full width of container */
+}

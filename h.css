@@ -16,3 +16,6 @@ header{
 :root{
     --bg-color: rgb(255, 255, 255);
 }
+.written_content{
+    margin-top: 120px;
+}

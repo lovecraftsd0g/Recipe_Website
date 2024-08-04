@@ -1,29 +1,92 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="searchstyle.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        
+        <style>
+            .imge {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+
+            .imge img {
+                width: 50%;
+                height: auto;
+                object-fit: cover;
+            }
+
+            #recipe-card{
+                margin-top: 10px;
+            }
+        </style>
     </head>
     <body>
         <div class="sw">
-            <input class="w3-circle w3-red" type="search" id="search" placeholder="search">
+            <input class="w3-circle w3-red" type="text" id="searchbar" placeholder="search" onkeyup="searchfood()">
         </div>
-        <div class="uc">
-
-            <div class="w3-card w3-row w3-border w3-red" id="full card">
-                <div class="w3-container w3-white w3-half">
-                    <h1>fff</h1> <!--please ensure to replace the header 1 with an image-->               
-                </div>
-                <div class="w3-container w3-half">
-                    <div class="header">name</div>
-                    <div class="body">description</div>
-                </div>
-            </div>
+        <div class="w3-container">
             
+                    <div id="" class="w3-card w3-row w3-container w3-red recipe-card">
+                        <div class="w3-half imge">
+                            <img src="beef-stirfry.jpg">
+                        </div>
+                        <div class="w3-half full-desc">
+                            <h3 class="food-name"><b>n</b></h3>
+                            <p>
+                                ----------------------------------------------------------------------------------------------------------------------------------
+                                ----------------------------------------------------------------------------------------------------------------------------------
+                            </p>
+                        </div>
+                    </div>
             
-
+                    <div id="" class="w3-card w3-row w3-container w3-red recipe-card">
+                        <div class="w3-half imge">
+                            <img src="beef-stirfry.jpg">
+                        </div>
+                        <div class="w3-half full-desc">
+                            <h3 class="food-name"><b>n</b></h3>
+                            <p>
+                                ----------------------------------------------------------------------------------------------------------------------------------
+                                ----------------------------------------------------------------------------------------------------------------------------------
+                            </p>
+                        </div>
+                    </div>
+            
+                    <div id="" class="w3-card w3-row w3-container w3-red recipe-card">
+                        <div class="w3-half imge">
+                            <img src="beef-stirfry.jpg">
+                        </div>
+                        <div class="w3-half full-desc">
+                            <h3 class="food-name"><b>n</b></h3>
+                            <p>
+                                ----------------------------------------------------------------------------------------------------------------------------------
+                                ----------------------------------------------------------------------------------------------------------------------------------
+                            </p>
+                        </div>
+                    </div>
+            
+                    
         </div>
+
+        <script>
+            function searchfood(){
+                let input = document.getElementById('searchbar').value.toLowerCase();
+                let cards = document.getElementsByClassName('recipe-card');
+                let names = document.getElementsByClassName('food-name');
+                
+                for(let i = 0; i < names.length; i++){
+                    name = names[i].textContent.toLowerCase();
+                    if(name.includes(input)){
+                        cards[i].style.display = "";
+                    } else{
+                        cards[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
     </body>
 </html>

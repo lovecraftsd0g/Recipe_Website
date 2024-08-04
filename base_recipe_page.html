@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <style>
+
+            .like-dis {
+                    display: flex;
+                    align-items: center;
+                }
+                .like-dis div {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 10px;
+                }
+                .like-dis button {
+                    margin-right: 5px;
+                }
+                .like-dis p {
+                    margin: 0;
+                }
+        </style>
+    </head>
+
+    <body>
+        <div class="menu-items">
+
+        </div>
+        
+        <h1><b>name of food</b></h1>
+        <div class="like-dis">
+            <div class="like-butt">
+                <button class="w3-button" onclick="like()"><img src="thumb-up.png" alt=""></button><p id="like_num">0</p>
+            </div>
+            <div class="dislike-butt">
+                <button class="w3-button" onclick="dislike()"><img src="thumbs-down.png" alt=""></button><p id="dislike_num">0</p>
+            </div>
+        </div>
+        <p class="description"></p>
+        <br>
+        <div class="ingrid">
+            <h4>neccesary ingridients</h4>
+            <ul>
+                <li>ingridient <input type="checkbox"></li>
+            </ul>
+        </div>
+        
+
+        <div class="instructions">
+            <h3><b>1.</b></h3>
+            <p>----------------------</p>
+            <img src="beef-stirfry.jpg" alt="" width="350" height="350">
+        </div>
+
+        <script>
+                function like() {
+                    let likenum = document.getElementById('like_num');
+                    let currentLikes = parseInt(likenum.innerHTML);
+                    likenum.innerHTML = currentLikes + 1;
+                }
+                
+                function dislike() {
+                    let dislikenum = document.getElementById('dislike_num');
+                    let currentLikes = parseInt(dislikenum.innerHTML);
+                    dislikenum.innerHTML = currentLikes + 1;
+                }
+        </script>
+    </body>
+</html>

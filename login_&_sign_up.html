@@ -6,25 +6,40 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+        <style>
+            .flex-parent{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .box {
+                background-color: red;
+                margin: 20px;
+                padding: 20px;
+                }
+            .title{
+                margin-bottom: 20px;
+            }
+        </style>
+
     </head>
     <body>
-        <div class="sign-up w3-half w3-round"><br><br>
-            <header><h4><b>Sign up</b></h4></header>
-            <h4>email</h4>
-            <input type="text"><br><br>
-            <h4>password</h4>
-            <input type="text"><br><br>
-            <h4>confirm password</h4>
-            <input type="text"><br><br>
-            <button class="w3-button w3-red w3-round"><b>submit</b></button>
-        </div>
-        <div class="login w3-half"><br><br>
-            <h4>email</h4>
-            <input type="text"><br><br>
-            <h4>password</h4>
-            <input type="text"><br><br><br><br><br><br><br>
-            <button class="w3-button w3-red w3-round"><b>submit</b></button>
 
+        <div class="flex-parent">
+                <div class="box w3-container w3-round">
+                    <h3 class="title">sign up</h3>
+                    <h5>email</h5>
+                    <input class="w3-input w3-round" type="text">
+                    <h5>password</h5>
+                    <input class="w3-input w3-round" type="text">
+                </div>
+                <div class="box w3-container w3-round">
+                    <h3 class="title">login</h3>
+                    <h5>email</h5>
+                    <input class="w3-input w3-round" type="text">
+                    <h5>password</h5>
+                    <input class="w3-input w3-round" type="text">
+                </div>
         </div>
         
     </body>
