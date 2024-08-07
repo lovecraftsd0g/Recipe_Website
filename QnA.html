@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <style>
+            
+        .cont{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .content{
+            text-align: center;
+        }
+
+
+        </style>
+    </head>
+
+     
+
+    <body>
+        
+    <div class="cont">
+        <div class="search">
+            <a href="searchpage.html" class="w3-button">
+                <img src="search_icon.png" width="40" height="40">
+            </a>
+
+            
+            <a  href="index.html" class="w3-button">
+                <img src="home-button.png" width="40" height="40" alt="">
+            </a>
+        </div>
+        <div class="log-and-sig">
+            <a href="sign-up.html" class="w3-button">
+                <p class="buttonp">login</p>
+            </a>
+                
+            <a href="login.html" class="w3-button w3-red">
+                <p class="buttonp">sign in</p>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="content">
+        <h1>Qna</h1>
+        <h4>in here questions will be answered and ifif it is not please send your question to patrickagastya1403@gmail.com</h4>
+        <br>
+        <div class="click"><p class="qustion">how do i submit my recipes</p></div>
+        <div class="answer1">
+            just send to my email, patrickagastya1403@gmail.com, then i will submit your recipe, send ingridients and the 
+            steps which are needed and pictures of you doing it and possinly a video
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            var hid1 = true;
+            $('.answer1').hide();
+            $('.click').click(function(){
+                if(hid1){
+                    $('.answer1').slideDown('slow');
+                    hid1 = false;
+                }else{
+                    $('.answer1').slideUp('slow');
+                    hid1 = true;
+                }
+            });
+
+            
+            var hid2 = true;
+            $('.answer2').hide();
+            $('.click').click(function(){
+                if(hid2){
+                    $('.answer2').slideDown('slow');
+                    hid2 = false;
+                }else{
+                    $('.answer2').slideUp('slow');
+                    hid2 = true;
+                }
+            });
+
+            
+            var hid3 = true;
+            $('.answer3').hide();
+            $('.click').click(function(){
+                if(hid3){
+                    $('.answer3').slideDown('slow');
+                    hid3 = false;
+                }else{
+                    $('.answer3').slideUp('slow');
+                    hid3 = true;
+                }
+            });
+        });
+    </script>
+    </body>
+</html>

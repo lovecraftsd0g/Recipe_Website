@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="h.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <style>
+            .flex-parent{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .box {
+                background-color: rgb(220, 40, 40);
+                margin: 20px;
+                margin-bottom: 50px;
+                padding: 20px;
+                width: 700px; /* Adjust this value as needed */
+                max-width: 1200px; /* Optional: Set a maximum width */
+                }
+            .title{
+                margin-bottom: 20px;
+            }
+            
+        .cont{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        .flex-parent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full height viewport */
+        }
+
+        
+        .submit{
+            margin-top: 20px;
+            margin-left: 590px;
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="cont">
+            <div class="search">
+                <a href="searchpage.html" class="w3-button">
+                    <img src="search_icon.png" width="40" height="40">
+                </a>
+            </div>
+            <div class="home">
+                <a  href="index.html" class="w3-button">
+                    <img src="home-button.png" width="40" height="40">
+                </a>
+
+            </div>
+        </div>
+
+        <div class="flex-parent">
+                <div class="box w3-container w3-round">
+                    <h3 class="title">login</h3>
+                    <h5>email</h5>
+                    <input class="w3-input w3-round" type="text">
+                    <h5>password</h5>
+                    <input class="w3-input w3-round" type="text">
+                    <button class="submit w3-button w3-red">Login </button>
+                </div>
+        </div>
+        
+    </body>
+</html>
