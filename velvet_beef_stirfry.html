@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <style>
+            .name{
+                margin-top: 65px;
+                margin-left: 50px;
+
+            }
+            .like-dis {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 100px;
+                }
+                .like-dis div {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 10px;
+                }
+                .like-dis button {
+                    margin-right: 5px;
+                }
+                .like-dis p {
+                    margin: 0;
+                }
+
+
+                
+        .cont{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .instr, .ingrid{
+            margin-left: 100px;
+            margin-top: 40px;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="cont">
+            <div class="search">
+                <a href="searchpage.html" class="w3-button">
+                    <img src="search_icon.png" width="40" height="40">
+                </a>
+            </div>
+            <div class="log-and-sig-and-home">
+                <a href="login_&_sign_up.html" class="w3-button">
+                    <p class="buttonp">login</p>
+                </a>
+                    
+                <a href="login_&_sign_up.html" class="w3-button w3-red">
+                    <p class="buttonp">sign in</p>
+                </a>
+                <a  href="index.html" class="w3-button">
+                    <img src="home-button.png" width="40" height="40" alt="">
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="menu-items">
+
+        </div>
+        
+        <h1 class="name"><b>Beef stir fry</b></h1>
+        <div class="like-dis">
+            <div class="like-butt">
+                <button class="w3-button" onclick="like()"><img src="thumb-up.png" alt=""></button><p id="like_num">0</p>
+            </div>
+            <div class="dislike-butt">
+                <button class="w3-button" onclick="dislike()"><img src="thumbs-down.png" alt=""></button><p id="dislike_num">0</p>
+            </div>
+        </div>
+        <p class="description"></p>
+        <br>
+        <div class="ingrid">
+            <h4>neccesary ingridients</h4>
+            <ul>
+                <li>beef <input type="checkbox"></li>
+                <li>seasoning<input type="checkbox"></li>
+                <li>kecap manis <input type="checkbox"></li>
+                <li>oil <input type="checkbox"></li>
+                <li>corn starch <input type="checkbox"></li>
+                <li>Baking Soda <input type="checkbox"></li>
+            </ul>
+        </div>
+        
+
+        <div class="instructions">
+            <div class="instr">
+                <h3><b>1. put baking soda on your beef</b></h3>
+                    <p>while putting the baking soda on the beef ensure that you pour in enough water for the baking soda to dissolve,
+                        then proceed with mixing 
+                    </p>
+                <img src="beef-stirfry.jpg" alt="" width="350" height="350">
+            </div>
+
+            <div class="instr">
+                <h3><b>2. let the meat rest in the fridge</b></h3>
+                    <p>let the meat rest in the fridge for at least an hour</p>
+                <img src="beef-stirfry.jpg" alt="" width="350" height="350">
+            </div>
+
+            <div class="instr">
+                <h3><b>3. wash the meat</b></h3>
+                    <p>after letting the meat rest wash off any excess baking soda</p>
+                <img src="beef-stirfry.jpg" alt="" width="350" height="350">
+            </div>
+
+            <div class="instr">
+                <h3><b>4. season any meat</b></h3>
+                    <p>put any seasoning on your meat</p>
+                <img src="beef-stirfry.jpg" alt="" width="350" height="350">
+            </div>
+
+            <div class="instr">
+                <h3><b>5. put cornstarch on your meat</b></h3>
+                    <p>after seasoning the meat please mixin some cornstarch along the seasoning</p>
+                <img src="beef-stirfry.jpg" alt="" width="350" height="350">
+            </div>
+
+            <div class="instr">
+                <h3><b>6. prepare the pan(preferebly a wok)</b></h3>
+                    <p>prepare the pan by applying the oil to the pan, at least enough to make a small puddle,
+                        after that heat up the pan and wait until smoke shows from the pan
+                    </p>
+                <img src="beef-stirfry.jpg" alt="" width="350" height="350">
+            </div>
+
+            <div class="instr">
+                <h3><b>7. fry up the beef</b></h3>
+                    <p>fry up the beef, and hear the sizzle</p>
+                <img src="beef-stirfry.jpg" alt="" width="350" height="350">
+            </div>
+
+            <div class="instr">
+                <h3><b>8. apply the kecap manis on the beef, while the beef is frying</b></h3>
+                    <p>while the meat is frying and cooking in the pan, apply the kecap manis onto the beef while also mixing to ensure the beef is properly marinated by the sauce</p>
+                <img src="beef-stirfry.jpg" alt="" width="350" height="350">
+            </div>
+
+            <div class="instr">
+                <h3><b>7. serve up and eat</b></h3>
+                    <p>serve up the beef, in any way you please</p>
+                <img src="beef-stirfry.jpg" alt="" width="350" height="350">
+            </div>
+        </div>
+
+        <script>
+                function like() {
+                    let likenum = document.getElementById('like_num');
+                    let currentLikes = parseInt(likenum.innerHTML);
+                    likenum.innerHTML = currentLikes + 1;
+                }
+                
+                function dislike() {
+                    let dislikenum = document.getElementById('dislike_num');
+                    let currentLikes = parseInt(dislikenum.innerHTML);
+                    dislikenum.innerHTML = currentLikes + 1;
+                }
+        </script>
+    </body>
+</html>

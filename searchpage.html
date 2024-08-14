@@ -6,6 +6,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         
         <style>
+            .hide{
+                display: none;
+            }
+            /* Image container styles */
             .imge {
                 display: flex;
                 justify-content: center;
@@ -19,10 +23,12 @@
                 object-fit: cover;
             }
 
+/* Recipe card styles */
             #recipe-card{
                 margin-top: 10px;
             }
 
+/* Search bar styles */
             #searchbar{
                 height: 40px;
                 width: 500px;
@@ -32,6 +38,7 @@
                 margin-left: 100px;
             }
             
+/* Container styles */
         .cont{
             display: flex;
             align-items: center;
@@ -60,46 +67,50 @@
 
 
         <div class="w3-container">
-            
-                    <div id="" class="w3-card w3-row w3-container w3-red recipe-card">
-                        <div class="w3-half imge">
-                            <img src="beef-stirfry.jpg">
+                    <a href="velvet_beef_stirfry.html">
+                        <div id="" class="w3-card w3-row w3-container w3-red recipe-card">
+                            <div class="w3-half imge">
+                                <img src="beef-stirfry.jpg">
+                            </div>
+                            <div class="w3-half full-desc">
+                                <h3 class="food-name"><b>Beef stir fry</b></h3>
+                                <p>
+                                    a beef recipe, simple and fun to make, and delectible
+                                </p>
+                            </div>
                         </div>
-                        <div class="w3-half full-desc">
-                            <h3 class="food-name"><b>n</b></h3>
-                            <p>
-                                ----------------------------------------------------------------------------------------------------------------------------------
-                                ----------------------------------------------------------------------------------------------------------------------------------
-                            </p>
+                    </a>
+
+                    <a href="">
+                        <div id="" class="w3-card w3-row w3-container w3-red recipe-card">
+                            <div class="w3-half imge">
+                                <img src="beef-stirfry.jpg">
+                            </div>
+                            <div class="w3-half full-desc">
+                                <h3 class="food-name"><b>n</b></h3>
+                                <p>
+                                    ----------------------------------------------------------------------------------------------------------------------------------
+                                    ----------------------------------------------------------------------------------------------------------------------------------
+                                </p>
+                            </div>
                         </div>
-                    </div>
-            
-                    <div id="" class="w3-card w3-row w3-container w3-red recipe-card">
-                        <div class="w3-half imge">
-                            <img src="beef-stirfry.jpg">
+                    </a>
+
+
+                    <a class="hide" href="">
+                        <div id="" class="w3-card w3-row w3-container w3-red recipe-card">
+                            <div class="w3-half imge">
+                                <img src="beef-stirfry.jpg">
+                            </div>
+                            <div class="w3-half full-desc">
+                                <h3 class="food-name"><b>n</b></h3>
+                                <p>
+                                    ----------------------------------------------------------------------------------------------------------------------------------
+                                    ----------------------------------------------------------------------------------------------------------------------------------
+                                </p>
+                            </div>
                         </div>
-                        <div class="w3-half full-desc">
-                            <h3 class="food-name"><b>n</b></h3>
-                            <p>
-                                ----------------------------------------------------------------------------------------------------------------------------------
-                                ----------------------------------------------------------------------------------------------------------------------------------
-                            </p>
-                        </div>
-                    </div>
-            
-                    <div id="" class="w3-card w3-row w3-container w3-red recipe-card">
-                        <div class="w3-half imge">
-                            <img src="beef-stirfry.jpg">
-                        </div>
-                        <div class="w3-half full-desc">
-                            <h3 class="food-name"><b>n</b></h3>
-                            <p>
-                                ----------------------------------------------------------------------------------------------------------------------------------
-                                ----------------------------------------------------------------------------------------------------------------------------------
-                            </p>
-                        </div>
-                    </div>
-            
+                    </a>
                     
         </div>
 
